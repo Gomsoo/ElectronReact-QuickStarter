@@ -1,0 +1,23 @@
+{
+  "name": "electron-react-quick-starter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "main": "src/electron-starter.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "electron-build": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32,x64 --out=build-electron"
+  },
+  "devDependencies": {
+    "electron": "^1.8.3"
+  }
+}
