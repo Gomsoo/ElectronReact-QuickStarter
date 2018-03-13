@@ -1,4 +1,4 @@
-# ElectronReact-QuickStarter
+# Electron React Quick Starter
 
 React project using `create-react-app` and `Electron`.<br>
 This project was created based on [Building an Electron application with create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
@@ -7,7 +7,52 @@ This project was created based on [Building an Electron application with create-
 [Building an Electron application with create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)을 참고하여 만들어졌습니다.<br>
 원문 글대로 `ejecting`을 하지 않았으므로, `webpack`을 비롯한 각종 프로젝트 세팅을 직접 커스터마이징 하고 싶지 않은 분들에게 적합합니다.
 
+원문 글에서 이 프로젝트에 적용한 부분은 `create-react-app` 프로젝트에 `electron` 개발 환경을 세팅한 부분까지이며 하단에 인용되어 있습니다.<br>
+또한 원문 글에는 없는 `electron-packager`를 통해 데스크톱 실행파일을 빌드하는 것이 반영되어 있습니다.<br>
+프로젝트에는 반영되어 있지 않으나 `Firebase`를 통한 호스팅까지 테스트를 한 상태입니다.
 
+## Usage
+
+**Download**
+
+```
+git clone https://github.com/Gomsoo/ElectronReact-QuickStarter.git electron-react-quick-starter
+cd electron-react-quick-starter
+npm install
+```
+
+
+**Test on Web**<br>
+webpack-dev-server를 통한 브라우저에서 실행. 기존 `create-react-app`과 동일.
+
+```
+npm start
+```
+
+**Test on Desktop**<br>
+`npm start`가 실행되고 있는 상태에서 일렉트론 테스트를 진행하여야 합니다. 따라서 두 커맨드는 서로 다른 터미널에서 각각 실행합니다.
+
+```
+npm start
+```
+
+```
+npm run electron
+```
+
+**Build Desktop executable**<br>
+현재 `windows`용 빌드만 작성되어 있습니다. `maxOS`, `Linux` 빌드 타겟 및 추가 옵션을 원하시면 [electron-packager](https://github.com/electron-userland/electron-packager)를 참고하세요.
+
+```
+npm run build
+npm run electron-build
+```
+
+
+
+## Quotation
+
+The following is a text from the original article that was applied to this project.<br>
 여기부터는 원문 글에서 현 프로젝트에 적용한 부분을 그대로 가져온 내용입니다.
 
 #### Basic Recipe
